@@ -19,6 +19,11 @@
      <link rel="stylesheet" href="../Dependencies/font-awesome-4.7.0/css/font-awesome.min.css">
      <!--<link rel="stylesheet" href="../Styles/video.css">-->
     <link href="http://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
+    <script>
+        // Initialize and catalog local storage variables
+        // 1. WORKSPACE
+        localStorage.WORKSPACE = '';
+    </script>
 </head>
 
 <body>
@@ -43,8 +48,11 @@
           Larnx Core
         </a>
       </li>
+        <li>
+            <a onclick="setWorkspace()" href="#">Set Workspace</a>
+        </li>
       <li>
-        <a onclick="fileExplorer('2d')" href="#">Import 2D</a>
+        <a onclick="fileExplorer()" href="#">Import Video</a>
       </li>
       <li>
         <a onclick="frameCapture()" href="#">Frame Capture</a>
@@ -62,9 +70,7 @@
   <!-- Page Content -->
   <div id="page-content-wrapper">
     <div class="container-fluid">
-      <h1>Larnx Core: Image Processing for Dysphagia</h1>
-        <p> We can use this whitespace for displaying all the image processing software goods :)
-        <p> Oh, and click the logo to toggle the side bar </p>
+      <h1>Larnx 2D: Image Processing for Dysphagia</h1>
         <p id="textArea"></p>
 
         <div class="row">
